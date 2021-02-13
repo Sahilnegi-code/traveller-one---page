@@ -1,0 +1,360 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+html{
+    font-size: 62.5%;
+    /* 62.5<---10px */
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    /* border: 2px solid red; */
+    letter-spacing: 0.03125em;
+}
+.pic{
+    width: 70%;
+    margin: 40px auto;
+    /* border: 10px solid green; */
+   
+}
+.features{
+ padding: 10em 0;
+ /* border: 3px solid red; */
+}
+.box{
+    width: 33.33%;
+    /* border: 2px solid black; */
+    float: left;
+    padding: 2em;
+    text-align: center;
+
+}
+.box-1,.box-3{
+    background-color: #dd8d8d;
+}
+
+    /* border: 2px solid brown; */
+    /* box-shadow: 0px 0px 0px 10px brown; */
+/* box-shadow: 0 0 0 ; */
+/* box-shadow: 0px 0px 11px 0px hsl(0, 78%, 75%); */
+
+.pad{
+    padding: 1rem;
+}
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+    /* padding: 2rem 2rem; */
+
+}
+
+
+
+
+h1,h2,h3{
+    /* margin-bottom: 0.5em; */
+    /* margin-left:10em; */
+    letter-spacing: 0.15em;
+    font-weight: 500;
+    /* color: white; */
+    /* font-size: ; */
+}
+.header-content h1,.header-content p{
+
+font-weight: 700;
+}
+
+/* ######################## utility classes ############### */
+.lg-heading{
+font-size: 3.5rem;
+}
+.orange{
+    background-color: orange;
+}
+.white{
+    color: white;
+}
+
+
+
+.md-heading{
+    font-size: 2.2rem;
+}
+.red{
+    color: red;
+}
+.white{
+    color: white;
+}
+.black{
+    color: yellowgreen;
+}
+.grey{
+    color: grey;
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 autoe;
+}
+.box-1,.box-3{
+background-color: brown;
+color: white;
+}
+
+.box-2{
+    background-color: orange;
+}
+
+
+
+
+
+/* ########################## end utility class ###################### */
+
+
+
+
+header.header{
+    /* border: 20px solid red; */
+    height: 95vh;
+    background: url('../img/header.jpg');
+    background-position:bottom;
+    /* // top , cover */
+    background-size: cover;
+    background-repeat:no-repeat;
+    position: relative;
+
+}
+.header .navbar .nav-items{
+    padding-right: 20rem;
+    padding-top: 1rem;
+    word-spacing: 23px;
+    
+    text-transform:uppercase;
+    
+}
+.header .navbar .nav-items a{
+    font-size: 2.0rem;
+    
+}
+
+/* .navbar{
+    /* border: 2px solid red; */
+
+
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    /* border: 2px solid red; */
+
+
+}
+.btn-secondary{
+    border:2px solid red;
+    border-radius: 4em;
+    color: red;
+}
+/* font-size ka lia rem  */
+/* em for padding and margin */
+.navbar .logo{
+    float: left;
+    font-size: 2.7rem;
+    color: white;
+    padding-left: 13em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0em;
+}
+.btn-primary{
+    background-color: white;
+    border-radius: 100px;
+    text-transform: uppercase;
+
+}
+.row::after{
+    content: " ";
+    display: none;
+    clear: both;
+}
+
+
+.btn-primary:hover{
+background: rgb(245, 241, 241);
+}
+.btn-secondary:hover{
+    background: rgb(238, 179, 179);
+    }
+    
+.header .navbar ul{
+    float: right;  
+    
+}
+.header-content{
+    /* border:2px solid red; */ 
+     position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1));
+   
+
+
+}
+
+
+
+.header .navbar .nav-item{
+    display: inline-block;
+    /* display: none; */
+}
+.navbar a:link,.navbar a:visited{
+    color: white;
+}
+.nav-items a{
+    padding-bottom:0.2em;
+}
+.navbar a:hover{
+    border-bottom: 1px solid white;
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+/* ################### show case sectioN #########*/
+
+.piko{
+    background: hsl(0, 0%, 96%);
+    padding: 10rem 0;
+    /* width: 80%; */
+
+    
+    /* margin: 5px auto; */
+    
+    
+}
+.grey{
+    color: grey;
+}
+
+.text-box{
+height: 100%;
+}
+
+.row{
+    height: 350px;
+    /* border: 2px solid red; */
+    /* border: 2px solid red; */
+
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .img-box,.row2 .text-box{
+ float: left;
+ width: 50%;  
+ /* border: 2px solid orange; */
+ 
+}
+.row2 .img-box,.row1 .text-box{
+ float: right;
+ width: 50%;   
+ /* border: 2px solid orange; */
+}
+.row2 .img-box,.row1 .img-box
+{
+    height: 100%;
+}
+
+.space{
+ padding-top:2rem;
+}
+.piko .container .row .text-box{
+    padding: 4rem;
+    background-color: white;
+}
+.container{
+width: 80%;
+margin: 1px auto;
+}
+.row .img-box img{
+ display: inline-block;
+  width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+/* ############# feature section ##############p */
+.kon{
+    box-shadow: 0px 0px 20px 0px black ;
+}
+              
+.footer{
+    background-color: #cfc7c7;
+    padding: 40px;
+    /* width: 80%; */
+    /* border: 2px solid red; */
+    margin: 5px auto;
+    text-align: center;
+}
+.footer i{
+    margin: 1px 10px;
+    /* border: 2px solid red; */
+}
+
+.lg{ 
+text-transform: uppercase;
+font-size: 20px;
+}
+
+
+/* ############### feature section in styling */
+.row{
+    /* border: 2px solid red; */
+    box-shadow:  0 0 10px 0 red;
+}
+.bg-dark{
+    background: crimson;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
